@@ -1,0 +1,1 @@
+[{"model": "cameras.camera", "pk": 1, "fields": {"url": "http://77.103.172.17:8080/mjpg/video.mjpg", "lat": "42.6977", "long": "23.3219", "mask": "media/masks/mask1.png", "orientation": "232", "max_cap": 30, "current_load": 0}}]

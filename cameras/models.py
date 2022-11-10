@@ -45,7 +45,7 @@ class Camera(models.Model):
         f = [base]
         new_ff = []
         if self.is_stationary:
-            for i in range(self.current_load):
+            for i in range(self.max_cap-self.current_load):
                 d = (1 / 1000) * 3
                 f.append(compute_crds(distance=-d,rotation=int(self.orientation), lat=f[-1]['lat'], long=f[-1]['long']))
         else:

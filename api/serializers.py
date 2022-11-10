@@ -20,4 +20,5 @@ class CameraInfoSerializer(serializers.ModelSerializer):
             'orientation',
             'max_cap',
             'current_load',
+            'is_stationary',
         ]

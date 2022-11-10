@@ -267,8 +267,13 @@
         $.get("/api/v1/cameras/get-data/", function (data, status) {
             $.each(data, function (key, value) {
                 console.log(value.lat);
-                console.log(value);
-                heatMapData.push(new google.maps.LatLng(value.lat, value.long))
+                console.log(value.pins);
+                    $.each(value.pins, function (k, v) {
+                        console.log(v)
+                        heatMapData.push(new google.maps.LatLng(v.lat, v.long))
+                    })
+
+
             });
             var heatmap = new google.maps.visualization.HeatmapLayer({
                 data: heatMapData

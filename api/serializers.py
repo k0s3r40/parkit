@@ -21,4 +21,5 @@ class CameraInfoSerializer(serializers.ModelSerializer):
             'max_cap',
             'current_load',
             'is_stationary',
+            'pins',
         ]
